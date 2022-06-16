@@ -29,7 +29,7 @@ void DZBmenu()
 		}
 		if (authmananame(userinp))
 		{
-			if (!(currmana->privillagetype==0))
+			if (!(currmana->privillagetype==PERMISSION_DZB))
 			{
 				cout << "您登陆的身份不是党支部成员！" << endl;
 				continue;
@@ -61,6 +61,7 @@ void DZBmenu()
 		switch (userinp)
 		{
 		case 1:
+			currmana->addrecord();
 			continue;
 		case 2:
 			continue;
@@ -98,7 +99,7 @@ void TZBmenu()
 		}
 		if (authmananame(userinp))
 		{
-			if (!(currmana->privillagetype == 1))
+			if (!(currmana->privillagetype == PERMISSION_TZB))
 			{
 				cout << "您登陆的身份不是团支部成员！" << endl;
 				continue;

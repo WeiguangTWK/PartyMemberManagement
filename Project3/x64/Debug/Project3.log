@@ -1,6 +1,29 @@
-﻿  功能-增.cpp
+﻿  main.cpp
 C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  功能-增.cpp
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  文件存取操作.cpp
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\文件存取操作.cpp(90,20): error C2664: “std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>) noexcept(<expr>)”: 无法将参数 1 从“indexs”转换为“std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”
+          with
+          [
+              _Ty=indexs
+          ]
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\文件存取操作.cpp(90,18): message : 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\vector(1562,27): message : 参见“std::vector<indexs,std::allocator<indexs>>::erase”的声明
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\文件存取操作.cpp(95,20): error C2664: “std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::erase(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>) noexcept(<expr>)”: 无法将参数 1 从“indexsm”转换为“std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”
+          with
+          [
+              _Ty=indexsm
+          ]
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\文件存取操作.cpp(95,18): message : 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\vector(1562,27): message : 参见“std::vector<indexsm,std::allocator<indexsm>>::erase”的声明
   类实现-Student.cpp
 C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  类实现-manager.cpp
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  菜单.cpp
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  验证.cpp
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
   正在生成代码...
-  Project3.vcxproj -> C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\x64\Debug\Project3.exe

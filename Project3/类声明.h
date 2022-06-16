@@ -1,4 +1,6 @@
 #pragma once
+#define PERMISSION_DZB 0
+#define PERMISSION_TZB 1
 #include<iostream>
 #include<string>
 class student

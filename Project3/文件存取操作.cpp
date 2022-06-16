@@ -80,3 +80,12 @@ void save()
 	}
 	mfile.close();
 }
+
+void refreshrec()  //Ë¢ÐÂ
+{
+	for (auto it : students) free(it.pointer);
+	for (auto it : managers) free(it.pointer);
+	students.clear();
+	managers.clear();
+	load();
+}

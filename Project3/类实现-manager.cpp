@@ -1,5 +1,6 @@
 #include"全局变量存储区.h"
 #include"文件存取操作.h"
+#include"功能-增.h"
 using namespace std;
 
 //=========================================建立索引===========================================
@@ -20,17 +21,20 @@ void manager::addrecord()  //增
 		cout << "请选择新增用户类型：";
 		cout << "1.学生" << endl;
 		cout << "2.团支部成员" << endl;
-		if (this->privillagetype == 0) cout << "3.党支部成员" << endl << endl;
+		if (this->privillagetype == PERMISSION_DZB) cout << "3.党支部成员" << endl << endl;
 		cout << "4.退出" << endl;
 		int userinp;
 		cin >> userinp;
 		switch (userinp)
 		{
 		case 1:
+			addstudacc();
 			continue;
 		case 2:
+			addTZSacc();
 			continue;
 		case 3:
+			addDZBacc();
 			continue;
 		case 4:
 			return;
