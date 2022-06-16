@@ -87,5 +87,4 @@ void clearall() //删除缓存在内存的记录
 	for (auto it : managers) free(it.pointer);
 	students.clear();
 	managers.clear();
-	load();
 }
