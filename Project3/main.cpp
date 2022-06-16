@@ -14,7 +14,8 @@ int managercount=0;
 student* currstud;
 manager* currmana;
 
-bool isdebug = false;
+bool isdebug = true;
+bool willlogout = false;
 
 void firstbootsequence()
 {

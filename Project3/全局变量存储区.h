@@ -14,3 +14,4 @@ extern manager* currmana;   //当前登陆管理者
 extern std::string newinfo; //新通知
 
 extern bool isdebug;
+extern bool willlogout;

@@ -11,7 +11,7 @@ student::student(string n) :name(n)
 	a.name = n;
 	a.pointer = this;
 	students.push_back(a); 
-	cout << "new student obj create name " << a.name << " level " << a.pointer->type << endl;
+	if (isdebug)cout << "new student obj create name " << a.name << " level " << a.pointer->type << endl;
 }
 //============================================================================================
 

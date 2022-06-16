@@ -36,6 +36,15 @@
     <ClCompile Include="文件存取操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="功能-删.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="功能-改.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="功能-查.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="菜单.h">
@@ -54,6 +63,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="功能-增.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="功能-删.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="功能-改.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="功能-查.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

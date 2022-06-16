@@ -63,6 +63,12 @@ void addTZSacc()
 }
 void addDZBacc()
 {
+	if (currmana->privillagetype != PERMISSION_DZB)
+	{
+		cout << "输入有误，请重试！" << endl;
+		system("cls");
+		return;
+	}
 	while (true)
 	{
 		cout << "请输入党支部成员基本身份：" << endl;

@@ -53,6 +53,7 @@ void DZBmenu()
 	}
 	while (true)
 	{
+		if (willlogout) return;
 		system("cls");
 		cout << "欢迎！党支部成员，请选择您的操作：" << endl;
 		cout << "1.新增人员"<<endl;
@@ -71,6 +72,7 @@ void DZBmenu()
 			currmana->addrecord();
 			continue;
 		case 2:
+			currmana->delrecord();
 			continue;
 		case 3:
 			continue;
@@ -87,6 +89,7 @@ void DZBmenu()
 			cout << "选项有误，请重试！";
 			continue;
 		}
+		
 	}
 }
 
@@ -143,6 +146,7 @@ void TZBmenu()
 			currmana->addrecord();
 			continue;
 		case 2:
+			currmana->delrecord();
 			continue;
 		case 3:
 			continue;

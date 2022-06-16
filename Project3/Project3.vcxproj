@@ -129,7 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="功能-删.cpp" />
     <ClCompile Include="功能-增.cpp" />
+    <ClCompile Include="功能-改.cpp" />
+    <ClCompile Include="功能-查.cpp" />
     <ClCompile Include="文件存取操作.cpp" />
     <ClCompile Include="验证.cpp" />
     <ClCompile Include="main.cpp" />
@@ -138,7 +141,10 @@
     <ClCompile Include="类实现-Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="功能-删.h" />
     <ClInclude Include="功能-增.h" />
+    <ClInclude Include="功能-改.h" />
+    <ClInclude Include="功能-查.h" />
     <ClInclude Include="验证.h" />
     <ClInclude Include="文件存取操作.h" />
     <ClInclude Include="菜单.h" />

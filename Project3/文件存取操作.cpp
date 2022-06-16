@@ -12,14 +12,14 @@ void save()
 	file.open(FILEMANA, ios::out | ios::trunc | ios::binary);
 	file.seekp(0);
 	file.write((char*)&managercount, sizeof(int));
-	//cout << "managercount=" << managercount << endl;
+	if(isdebug)cout << "managercount=" << managercount << endl;
 	
 	for (auto it : managers)
 	{
 		man.name = it.name;
 		man.privillagetype = it.pointer->privillagetype;
 		file.write((char*)&man, sizeof(savedatamanager));
-		//cout << "save manager name " << man.name << " type " << man.privillagetype << endl;
+		if (isdebug)cout << "save manager name " << man.name << " type " << man.privillagetype << endl;
 	}
 	file.close();
 
@@ -37,10 +37,10 @@ void save()
 		stud.type = it.pointer->type;
 		stud.votecondition = it.pointer->votecondition;
 		file.write((char*)&stud, sizeof(savedatastudent));
-		//cout << "save student name " << stud.name << " type " << stud.type << endl;
+		if (isdebug)cout << "save student name " << stud.name << " type " << stud.type << endl;
 	}
 	file.close();
-	//system("pause");
+	if (isdebug)system("pause");
 }
 
 void load()
@@ -52,14 +52,14 @@ void load()
 	file.open(FILEMANA, ios::in | ios::binary);
 	file.seekg(0);
 	file.read((char*)&managercount, sizeof(int));
-	//cout << "managercount=" << managercount << endl;
+	if (isdebug)cout << "managercount=" << managercount << endl;
 	
 
 	for (int i = managercount; i > 0; i--)
 	{
 		file.read((char*)man, sizeof(savedatamanager));
 		manager* add = new manager(man->name, man->privillagetype);
-		//cout << "read manager " << add->name << " level " << add->privillagetype << endl;
+		if (isdebug)cout << "read manager " << add->name << " level " << add->privillagetype << endl;
 	}
 	file.close();
 
@@ -69,7 +69,7 @@ void load()
 	file.open(FILESTUD, ios::in | ios::binary);
 	file.seekg(0);
 	file.read((char*)&studentcount, sizeof(int));
-	//cout << "studentcount=" << studentcount << endl;
+	if (isdebug)cout << "studentcount=" << studentcount << endl;
 
 	for (int i = studentcount; i > 0; i--)
 	{
@@ -80,10 +80,10 @@ void load()
 		adds->status = stud->status;
 		adds->type = stud->type;
 		adds->votecondition = stud->votecondition;
-		//cout << "read student name " << adds->name << " type " << adds->status << endl;
+		if (isdebug)cout << "read student name " << adds->name << " type " << adds->status << endl;
 	}
 	file.close();
-	//system("pause");
+	if (isdebug)system("pause");
 }
 
 void clearall()
@@ -100,7 +100,7 @@ void clearall()
 	managers.clear();
 }
 
-void refresh()
+void refreshall()
 {
 	save();
 	clearall();
