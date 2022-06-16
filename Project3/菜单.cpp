@@ -10,7 +10,12 @@ using namespace std;
 
 void mainmenu()
 {
-	cout << "选择你的身份：" << endl << "1.党支部人员" << endl << "2.团支部人员" << endl << "3.学生" << endl << "4.退出系统" << endl << "键入选项：";
+	cout << "选择你的身份：" << endl 
+		 << "1.党支部人员" << endl 
+		 << "2.团支部人员" << endl 
+		 << "3.学生" << endl 
+		 << "4.退出系统" << endl 
+		 << "键入选项：";
 }
 
 void DZBmenu()
@@ -74,6 +79,7 @@ void DZBmenu()
 		case 6:
 			continue;
 		case 7:
+			system("cls");
 			return;
 		default:
 			cout << "选项有误，请重试！";
@@ -123,7 +129,8 @@ void TZBmenu()
 		cout << "3.更改人员信息" << endl;
 		cout << "4.查询人员信息" << endl;
 		cout << "5.录入推优情况" << endl;
-		cout << "6.登出账号" << endl;
+		cout << "6.发布通知" << endl;
+		cout << "7.登出账号" << endl;
 		cout << "键入需要进行的操作：";
 		int userinp;
 		cin >> userinp;
@@ -140,6 +147,9 @@ void TZBmenu()
 		case 5:
 			continue;
 		case 6:
+			continue;
+		case 7:
+			system("cls");
 			return;
 		default:
 			cout << "选项有误，请重试！";
@@ -192,6 +202,7 @@ void StudentMenu()
 			currstud->applyaction();
 			continue;
 		case 3:
+			system("cls");
 			return;
 		default:
 			cout << "选项有误，请重试！";

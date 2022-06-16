@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,8 +130,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="功能-增.cpp" />
-    <ClCompile Include="验证.cpp" />
     <ClCompile Include="文件存取操作.cpp" />
+    <ClCompile Include="验证.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="菜单.cpp" />
     <ClCompile Include="类实现-manager.cpp" />
