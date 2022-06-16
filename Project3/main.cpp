@@ -8,6 +8,7 @@ using namespace std;
 vector<indexs>students;   //建立学生和管理者索引（相当于目录）
 vector<indexsm>managers;
 
+std::string newinfo = "无通知"; //新通知
 int studentcount=0;
 int managercount=0;
 student* currstud;
@@ -25,13 +26,14 @@ void firstbootsequence()
 	{
 		cout << "键入用户类型（0=党支部，1=团支部）：";
 		cin >> type;
-		if (!(type == 0 || type == 1)) cout << "输入有误，请重试！";
+		if (!(type == PERMISSION_DZB || type == PERMISSION_TZB)) cout << "输入有误，请重试！";
 		else break;
 		system("cls");
 	}
 	manager* a = new manager(username, type);
 	managercount = 1;
 	save();
+	system("cls");
 }
 
 int main()

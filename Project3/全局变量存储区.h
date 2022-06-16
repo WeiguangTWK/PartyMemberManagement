@@ -10,3 +10,5 @@ extern int managercount;
 
 extern student* currstud;   //当前登陆学生
 extern manager* currmana;   //当前登陆管理者
+
+extern std::string newinfo; //新通知

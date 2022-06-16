@@ -44,3 +44,19 @@ void manager::addrecord()  //增
 		}
 	}
 }
+
+void manager::releaseinfo()     //发布通知
+{
+	while (true)
+	{
+		system("cls");
+		cout << "键入新通知内容：";
+		cin >> newinfo;
+		cout << "新通知为：" << newinfo << endl;;
+		cout << "您确认吗（Y/N）？";
+		char userinp;
+		cin >> userinp;
+		if (userinp == 'Y' || userinp == 'y') continue;
+	}
+	save();
+}

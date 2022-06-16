@@ -61,4 +61,22 @@ void addTZSacc()
 		break;
 	}
 }
-void addDZBacc();
+void addDZBacc()
+{
+	while (true)
+	{
+		cout << "请输入党支部成员基本身份：";
+		cout << "姓名:" << endl;
+		savedatamanager tmp;
+		cin >> tmp.name;
+		tmp.privillagetype = PERMISSION_DZB;
+		manager* a = new manager(tmp.name, tmp.privillagetype);
+		managercount++;
+		save();
+		cout << "录入完成，是否继续录入？（Y/N）";
+		char userinp;
+		cin >> userinp;
+		if (userinp == 'Y' || userinp == 'y') continue;
+		break;
+	}
+}

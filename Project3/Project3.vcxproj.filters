@@ -21,9 +21,6 @@
     <ClCompile Include="菜单.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="文件存取操作.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="类实现-Student.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -34,6 +31,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="功能-增.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="文件存取操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

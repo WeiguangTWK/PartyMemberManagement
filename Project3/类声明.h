@@ -33,6 +33,7 @@ public:
 	void judgeapplication();  //判定转正
 
 	void votecondrecadd();  //录入推优情况
+	void releaseinfo();     //发布通知
 
 	int privillagetype = 0;  //0=党支部 1=团支部
 private:
