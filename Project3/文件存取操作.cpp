@@ -81,7 +81,7 @@ void save()
 	mfile.close();
 }
 
-void refreshrec()  //刷新
+void clearall() //删除缓存在内存的记录
 {
 	for (auto it : students) free(it.pointer);
 	for (auto it : managers) free(it.pointer);
