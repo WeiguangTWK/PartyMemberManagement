@@ -1,2 +1,3 @@
 D:\Project3\x64\Debug\Project3.exe
 C:\Users\sunwe\source\repos\Project3\x64\Debug\Project3.exe
+C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\x64\Debug\Project3.exe

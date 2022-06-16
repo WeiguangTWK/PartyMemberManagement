@@ -18,12 +18,12 @@ void load()
 		savedatastudent stud, * studp = &stud;
 		file.open(FILESTUD, std::ios::in | std::ios::binary);  //FILESTUD见上面的宏定义, std::ios::in 代表打开文件用于读取，std::iso::binary代表文件按二进制方式打开
 		file.read((char*)studp, sizeof(savedatastudent));
-		student a(stud.name);
-		a.applydate = stud.applydate;
-		a.name = stud.name;
-		a.type = stud.type;
-		a.votecondition = stud.votecondition;
-		a.status = stud.status;
+		student* a=new student(stud.name);
+		a->applydate = stud.applydate;
+		a->name = stud.name;
+		a->type = stud.type;
+		a->votecondition = stud.votecondition;
+		a->status = stud.status;
 	}
 
 	

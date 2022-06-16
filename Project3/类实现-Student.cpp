@@ -83,7 +83,7 @@ void student::applyaction()
 	cout << "阅读完成后选择是否提交（Y/N）:";
 	char userinp;
 	cin >> userinp;
-	if (userinp == 'Y' && userinp == 'y')
+	if (userinp == 'Y' || userinp == 'y')
 	{
 		this->status = 2;
 		save();
