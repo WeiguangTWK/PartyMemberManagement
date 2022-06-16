@@ -1,0 +1,13 @@
+﻿  FileRWOpts.cpp
+C:\Users\sunwe\source\repos\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  auth.cpp
+C:\Users\sunwe\source\repos\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  main.cpp
+C:\Users\sunwe\source\repos\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  menus.cpp
+C:\Users\sunwe\source\repos\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  类实现.cpp
+C:\Users\sunwe\source\repos\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+C:\Users\sunwe\source\repos\Project3\类实现.cpp(68,19): warning C4305: “=”: 从“int”到“bool”截断
+  正在生成代码...
+  Project3.vcxproj -> C:\Users\sunwe\source\repos\Project3\x64\Debug\Project3.exe
