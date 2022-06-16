@@ -1,6 +1,6 @@
 #include"类声明.h"
 #include"全局变量存储区.h"
-#include"FileRWOpts.h"
+#include"文件存取操作.h"
 using namespace std;
 
 
@@ -12,21 +12,12 @@ student::student(string n) :name(n)
 	a.pointer = this;
 	students.push_back(a);  
 }
-
-manager::manager(string n, int priv) :student(n), privillagetype(priv)
-{
-	indexsm a;
-	a.name = n;
-	a.pointer = this;
-	managers.push_back(a);  
-}
-
 //============================================================================================
 
 void student::viewfunc()
 {
 	system("cls");
-
+	cout << "姓名  " << "政治面貌  " << "入党审核状态  " << "最后一次申请时间" << endl;
 	cout << this->name << "  ";
 	switch (this->type)
 	{
@@ -48,23 +39,25 @@ void student::viewfunc()
 	switch (this->status)
 	{
 	case 0:
-		cout << "群众";
+		cout << "未申请  ";
 		break;
 	case 1:
-		cout << "已提交申请";
+		cout << "已提交申请  ";
 		break;
 	case 2:
-		cout << "已提交申请，但未读";
+		cout << "已提交申请，但未读  ";
 		break;
 	case 3:
-		cout << "申请通过！";
+		cout << "申请通过！  ";
 		break;
 	case 4:
-		cout << "申请不通过";
+		cout << "申请不通过  ";
 		break;
 	default:
 		break;
 	}
+	cout << this->applydate << endl;
+	system("pause");
 }
 
 void student::applyaction()

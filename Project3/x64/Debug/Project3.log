@@ -1,14 +1,6 @@
-﻿  auth.cpp
-C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-  FileRWOpts.cpp
-C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-  main.cpp
-C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\main.cpp(38,3): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
-  menus.cpp
+﻿  功能-增.cpp
 C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
   类实现-Student.cpp
 C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\全局变量存储区.h(1,1): warning C4828: 文件包含在偏移 0x138 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
   正在生成代码...
-  LINK : 没有找到 C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\x64\Debug\Project3.exe 或上一个增量链接没有生成它；正在执行完全链接
   Project3.vcxproj -> C:\Users\sunwe\source\repos\PartyMemberManagement\Project3\x64\Debug\Project3.exe

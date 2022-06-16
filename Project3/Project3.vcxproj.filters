@@ -18,33 +18,42 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="menus.cpp">
+    <ClCompile Include="菜单.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="FileRWOpts.cpp">
+    <ClCompile Include="文件存取操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="类实现-Student.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="auth.cpp">
+    <ClCompile Include="验证.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="类实现-manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="功能-增.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="menus.h">
+    <ClInclude Include="菜单.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="类声明.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="FileRWOpts.h">
+    <ClInclude Include="文件存取操作.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="全局变量存储区.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="auth.h">
+    <ClInclude Include="验证.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="功能-增.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
