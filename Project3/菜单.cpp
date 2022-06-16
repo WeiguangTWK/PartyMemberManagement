@@ -1,6 +1,7 @@
 //这里用来写菜单项
 #pragma once
 #include"菜单.h"
+//#include"功能-增.h"
 #include"验证.h"
 #include"全局变量存储区.h"
 #include<iostream>
@@ -40,6 +41,7 @@ void DZBmenu()
 				continue;
 			}
 			cout << "登陆成功！";
+			Sleep(1200);
 			system("cls");   //清屏
 			break;
 		}
@@ -111,6 +113,7 @@ void TZBmenu()
 				continue;
 			}
 			cout << "登陆成功！";
+			Sleep(1200);
 			system("cls");   //清屏
 			break;
 		}
@@ -137,6 +140,7 @@ void TZBmenu()
 		switch (userinp)
 		{
 		case 1:
+			currmana->addrecord();
 			continue;
 		case 2:
 			continue;
@@ -175,6 +179,7 @@ void StudentMenu()
 		if (authstudname(userinp))
 		{
 			cout << "登陆成功！";
+			Sleep(1200);
 			system("cls");   //清屏
 			break;
 		}

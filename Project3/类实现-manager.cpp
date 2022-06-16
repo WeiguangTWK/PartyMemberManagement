@@ -4,7 +4,7 @@
 using namespace std;
 
 //=========================================½¨Á¢Ë÷Òý===========================================
-manager::manager(string n, int priv) :student(n), privillagetype(priv)
+manager::manager(string n, int priv) :name(n), privillagetype(priv)
 {
 	indexsm a;
 	a.name = n;

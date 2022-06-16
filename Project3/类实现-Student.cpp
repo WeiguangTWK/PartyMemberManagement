@@ -10,7 +10,8 @@ student::student(string n) :name(n)
 	indexs a;
 	a.name = n;
 	a.pointer = this;
-	students.push_back(a);  
+	students.push_back(a); 
+	cout << "new student obj create name " << a.name << " level " << a.pointer->type << endl;
 }
 //============================================================================================
 

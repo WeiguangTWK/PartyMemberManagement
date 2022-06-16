@@ -9,7 +9,7 @@ void addstudacc()
 	{
 		system("cls");
 		savedatastudent tmp;
-		cout << "请输入学生基本信息：";
+		cout << "请输入学生基本信息：" << endl;;
 		cout << "姓名：";
 		cin >> tmp.name;
 		while (true)
@@ -46,7 +46,7 @@ void addTZSacc()
 {
 	while (true)
 	{
-		cout << "请输入团支部成员基本身份：";
+		cout << "请输入团支部成员基本身份："<<endl;
 		cout << "姓名:" << endl;
 		savedatamanager tmp;
 		cin >> tmp.name;
@@ -65,7 +65,7 @@ void addDZBacc()
 {
 	while (true)
 	{
-		cout << "请输入党支部成员基本身份：";
+		cout << "请输入党支部成员基本身份：" << endl;
 		cout << "姓名:" << endl;
 		savedatamanager tmp;
 		cin >> tmp.name;
