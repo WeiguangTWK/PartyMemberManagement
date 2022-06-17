@@ -1,9 +1,16 @@
+#ifdef _HAS_STD_BYTE
+#undef _HAS_STD_BYTE
+#endif // _HAS_STD_BYTE
+#define _HAS_STD_BYTE 0
 #include"全局变量存储区.h"
 #include"文件存取操作.h"
+#include"disp.h"
 #include"功能-增.h"
 #include"功能-删.h"
 #include"功能-查.h"
 #include"功能-改.h"
+#include<Windows.h>
+#include<string>
 using namespace std;
 
 //=========================================建立索引===========================================
@@ -112,7 +119,7 @@ void manager::searchrecord()  //查
 	}
 }
 
-void manager::editrecord()
+void manager::editrecord()  //改
 {
 	while (true)
 	{
@@ -140,6 +147,115 @@ void manager::editrecord()
 		}
 	}
 }
+void manager::getvotecond()
+{
+	for (auto it : students)
+	{
+		if (it.pointer->applydate != "none")
+			cout << "姓名：" << it.pointer->name << " 推优情况：" << it.pointer->applydate << endl;
+	}
+}
+
+void manager::judgeapplication()
+{
+	bool isnewexist = false;
+	for (auto it : students)
+	{
+		if (it.pointer->status == 2) dispstudent(it);
+		isnewexist = true;
+	}
+	if (isnewexist) cout << endl << "以上为新提交入党申请的学生" << endl;
+	for (auto it : students)
+	{
+		if (it.pointer->status == 2)
+		{
+			it.pointer->status = 1;
+			continue;
+		}
+		if (it.pointer->status == 1) dispstudent(it);
+	}
+	string target;
+	indexs tar;
+	while (true)
+	{
+		cout << "键入成员姓名：";
+		cin >> target;
+		bool isfound = false;
+		for (auto it : students)
+		{
+			if (it.name == target)
+			{
+				dispstudent(it);
+				tar = it;
+				isfound = true;
+				cout << endl;
+				break;
+			}
+		}
+		if (!isfound)
+		{
+			cout << "查无此人！" << endl;
+			Sleep(1000);
+			continue;
+		}
+		if (tar.pointer->status == 0 || tar.pointer->status == 4)
+		{
+			cout << "该学生未提交申请书" << endl;
+			continue;
+		}
+		if (tar.pointer->status == 3)
+		{
+			cout << "该学生已是预备党员" << endl;
+			continue;
+		}
+		tar.pointer->status = 3;
+		tar.pointer->type = 3;
+		save();
+		cout << "是否继续查找（Y/N）?";
+		char userinp;
+		cin >> userinp;
+		if (userinp == 'Y' || userinp == 'y') continue;
+		else break;
+	}
+}
+
+void manager::votecondrecadd()
+{
+	while (true)
+	{
+		system("cls");
+		string target;
+		indexs tar;
+		cout << "键入学生姓名：";
+		cin >> target;
+		bool isfound = false;
+		for (auto it : students)
+		{
+			if (it.name == target)
+			{
+				dispstudent(it);
+				tar = it;
+				isfound = true;
+				cout << endl;
+				break;
+			}
+		}
+		if (!isfound)
+		{
+			cout << "查无此人！" << endl;
+			Sleep(1000);
+			continue;
+		}
+		cout << "输入推优情况（格式：同意票数/总票数）：";
+		cin >> tar.pointer->votecondition;
+		save();
+		cout << "是否继续查找（Y/N）?";
+		char userinp;
+		cin >> userinp;
+		if (userinp == 'Y' || userinp == 'y') continue;
+		else break;
+	}
+}
 
 void manager::releaseinfo()     //发布通知
 {
@@ -147,12 +263,12 @@ void manager::releaseinfo()     //发布通知
 	{
 		system("cls");
 		cout << "键入新通知内容：";
-		cin >> newinfo;
-		cout << "新通知为：" << newinfo << endl;;
+		cin >> *newinfo;
+		cout << "新通知为：" << *newinfo << endl;;
 		cout << "您确认吗（Y/N）？";
 		char userinp;
 		cin >> userinp;
-		if (userinp == 'Y' || userinp == 'y') continue;
+		if (userinp == 'Y' || userinp == 'y') break;
 	}
 	save();
 }

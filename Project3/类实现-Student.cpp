@@ -41,6 +41,9 @@ void student::applyaction()
 	if (userinp == 'Y' || userinp == 'y')
 	{
 		this->status = 2;
+		string applydate;
+		cout << "输入今日日期（格式：年/月/日）：";
+		cin >> applydate;
 		save();
 		cout << "您的申请已记录在案，请在数日内前往党支部递交入党申请书，随后您可以通过此系统查询入党进度" << endl;
 	}

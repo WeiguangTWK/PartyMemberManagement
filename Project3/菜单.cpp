@@ -81,8 +81,10 @@ void DZBmenu()
 			currmana->searchrecord();
 			continue;
 		case 5:
+			currmana->getvotecond();
 			continue;
 		case 6:
+			currmana->judgeapplication();
 			continue;
 		case 7:
 			system("cls");
@@ -158,8 +160,10 @@ void TZBmenu()
 			currmana->searchrecord();
 			continue;
 		case 5:
+			currmana->votecondrecadd();
 			continue;
 		case 6:
+			currmana->releaseinfo();
 			continue;
 		case 7:
 			system("cls");
@@ -205,6 +209,10 @@ void StudentMenu()
 		cout << "1.查询本人信息" << endl;
 		cout << "2.递交入党申请" << endl;
 		cout << "3.登出账号" << endl;
+		if (newinfo->length() != 0)
+		{
+			cout << "当前最新通知内容：" << *newinfo << endl;
+		}
 		cout << "键入需要进行的操作：";
 		int userinp;
 		cin >> userinp;

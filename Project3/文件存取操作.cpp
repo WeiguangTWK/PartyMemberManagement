@@ -39,6 +39,15 @@ void save()
 		file.write((char*)&stud, sizeof(savedatastudent));
 		if (isdebug)cout << "save student name " << stud.name << " type " << stud.type << endl;
 	}
+	size_t strlength = newinfo->length();
+	file.write((char*)&strlength, sizeof(size_t));
+
+	if (strlength != 0)
+	{
+		file.write((char*)newinfo, sizeof(string));
+		if (isdebug) cout << "save new info" << *newinfo << endl;
+	}
+
 	file.close();
 	if (isdebug)system("pause");
 }
@@ -82,6 +91,15 @@ void load()
 		adds->votecondition = stud->votecondition;
 		if (isdebug)cout << "read student name " << adds->name << " type " << adds->status << endl;
 	}
+	size_t strlength = 0;
+	file.read((char*)&strlength, sizeof(size_t));
+	if (isdebug)cout << "strlength=" << strlength << endl;
+	if (strlength != 0)
+	{
+		file.read((char*)newinfo, sizeof(string));
+		if (isdebug) cout << "read new info" << *newinfo << endl;
+	}
+
 	file.close();
 	if (isdebug)system("pause");
 }

@@ -1,6 +1,2 @@
-﻿  功能-改.cpp
-C:\Users\sunwe\source\repos\PartyMemberManagement-main\Project3\文件存取操作.h(1,1): warning C4828: 文件包含在偏移 0xb6 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-  文件存取操作.cpp
-C:\Users\sunwe\source\repos\PartyMemberManagement-main\Project3\文件存取操作.h(1,1): warning C4828: 文件包含在偏移 0xb6 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-  正在生成代码...
+﻿  菜单.cpp
   Project3.vcxproj -> C:\Users\sunwe\source\repos\PartyMemberManagement-main\Project3\x64\Debug\Project3.exe

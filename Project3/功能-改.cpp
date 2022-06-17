@@ -106,7 +106,7 @@ void editmana()
 			}
 			else break;
 		}
-		save();
+		refreshall();
 		cout << "ÊÇ·ñ¼ÌĞø²éÕÒ£¨Y/N£©?";
 		char userinp;
 		cin >> userinp;
