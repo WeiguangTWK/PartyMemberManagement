@@ -3,6 +3,7 @@
 #include"功能-增.h"
 #include"功能-删.h"
 #include"功能-查.h"
+#include"功能-改.h"
 using namespace std;
 
 //=========================================建立索引===========================================
@@ -50,7 +51,7 @@ void manager::addrecord()  //增
 	}
 }
 
-void manager::delrecord()
+void manager::delrecord()  //删
 {
 	while (true)
 	{
@@ -81,7 +82,7 @@ void manager::delrecord()
 	}
 }
 
-void manager::searchrecord()
+void manager::searchrecord()  //查
 {
 	while (true)
 	{
@@ -108,6 +109,35 @@ void manager::searchrecord()
 			break;
 		}
 
+	}
+}
+
+void manager::editrecord()
+{
+	while (true)
+	{
+		system("cls");
+		cout << "请选择修改用户类型：" << endl;
+		cout << "1.学生" << endl;
+		cout << "2.党支部/团支部成员" << endl;
+		cout << "3.退出" << endl << endl;
+		cout << "输入您的选择：";
+		int userinp;
+		cin >> userinp;
+		switch (userinp)
+		{
+		case 1:
+			editstud();
+			continue;
+		case 2:
+			editmana();
+			continue;
+		case 3:
+			system("cls");
+			return;
+		default:
+			break;
+		}
 	}
 }
 

@@ -1,6 +1,7 @@
 #include"类声明.h"
 #include"全局变量存储区.h"
 #include"文件存取操作.h"
+#include"disp.h"
 using namespace std;
 
 
@@ -15,49 +16,9 @@ student::student(string n) :name(n)
 }
 //============================================================================================
 
-void student::viewfunc()
+void student::viewfunc() //查看
 {
-	system("cls");
-	cout << "姓名  " << "政治面貌  " << "入党审核状态  " << "最后一次申请时间" << endl;
-	cout << this->name << "  ";
-	switch (this->type)
-	{
-	case 0:
-		cout << "群众  ";
-		break;
-	case 1:
-		cout << "共青团员  ";
-		break;
-	case 2:
-		cout << "入党积极分子  ";
-		break;
-	case 3:
-		cout << "预备党员  ";
-		break;
-	default:
-		break;
-	}
-	switch (this->status)
-	{
-	case 0:
-		cout << "未申请  ";
-		break;
-	case 1:
-		cout << "已提交申请  ";
-		break;
-	case 2:
-		cout << "已提交申请，但未读  ";
-		break;
-	case 3:
-		cout << "申请通过！  ";
-		break;
-	case 4:
-		cout << "申请不通过  ";
-		break;
-	default:
-		break;
-	}
-	cout << this->applydate << endl;
+	dispstudent(this);
 	system("pause");
 }
 

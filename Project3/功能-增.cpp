@@ -47,7 +47,7 @@ void addTZSacc()
 	while (true)
 	{
 		cout << "请输入团支部成员基本身份："<<endl;
-		cout << "姓名:" << endl;
+		cout << "姓名:";
 		savedatamanager tmp;
 		cin >> tmp.name;
 		tmp.privillagetype = PERMISSION_TZB;
@@ -72,7 +72,7 @@ void addDZBacc()
 	while (true)
 	{
 		cout << "请输入党支部成员基本身份：" << endl;
-		cout << "姓名:" << endl;
+		cout << "姓名:";
 		savedatamanager tmp;
 		cin >> tmp.name;
 		tmp.privillagetype = PERMISSION_DZB;

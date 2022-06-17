@@ -93,4 +93,5 @@ void dispmanager(indexsm src)
 		cout << "团支部成员";
 		break;
 	}
+	cout << endl;
 }

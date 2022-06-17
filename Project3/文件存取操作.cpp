@@ -32,7 +32,7 @@ void save()
 	for (auto it : students)
 	{
 		stud.applydate = it.pointer->applydate;
-		stud.name = it.name;
+		stud.name = it.pointer->name;
 		stud.status = it.pointer->status;
 		stud.type = it.pointer->type;
 		stud.votecondition = it.pointer->votecondition;

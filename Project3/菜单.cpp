@@ -75,8 +75,10 @@ void DZBmenu()
 			currmana->delrecord();
 			continue;
 		case 3:
+			currmana->editrecord();
 			continue;
 		case 4:
+			currmana->searchrecord();
 			continue;
 		case 5:
 			continue;
@@ -113,6 +115,7 @@ void TZBmenu()
 			if (!(currmana->privillagetype == PERMISSION_TZB))
 			{
 				cout << "您登陆的身份不是团支部成员！" << endl;
+				Sleep(1000);
 				continue;
 			}
 			cout << "登陆成功！";
@@ -149,8 +152,10 @@ void TZBmenu()
 			currmana->delrecord();
 			continue;
 		case 3:
+			currmana->editrecord();
 			continue;
 		case 4:
+			currmana->searchrecord();
 			continue;
 		case 5:
 			continue;
@@ -206,6 +211,7 @@ void StudentMenu()
 		switch (userinp)
 		{
 		case 1:
+			currstud->viewfunc();
 			continue;
 		case 2:
 			currstud->applyaction();
