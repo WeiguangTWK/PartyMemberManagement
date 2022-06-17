@@ -2,6 +2,7 @@
 #include"文件存取操作.h"
 #include"功能-增.h"
 #include"功能-删.h"
+#include"功能-查.h"
 using namespace std;
 
 //=========================================建立索引===========================================
@@ -95,10 +96,10 @@ void manager::searchrecord()
 		switch (userinp)
 		{
 		case 1:
-			
+			searchrecords();
 			continue;
 		case 2:
-			
+			searchmanager();
 			continue;
 		case 3:
 			system("cls");

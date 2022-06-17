@@ -3,5 +3,5 @@
 
 using namespace std;
 
-indexs searchrecord(std::string target); //²é
-indexsm searchmanager(std::string target);
+void searchrecords(); //²é
+void searchmanager();

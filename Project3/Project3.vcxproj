@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="显示功能.cpp" />
     <ClCompile Include="功能-删.cpp" />
     <ClCompile Include="功能-增.cpp" />
     <ClCompile Include="功能-改.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="类实现-Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="disp.h" />
     <ClInclude Include="功能-删.h" />
     <ClInclude Include="功能-增.h" />
     <ClInclude Include="功能-改.h" />
