@@ -57,7 +57,7 @@ struct savedatastudent
 	std::string applydate;     //申请日期
 	int type = 0;  //0=群众 1=共青团员 2=入党积极分子 3=预备党员
 	std::string votecondition; //推优情况
-	bool status = 0;  //0=通常 1=申请成为共产党员 2=新申请 3=申请通过 4=申请不通过
+	int status = 0;  //0=通常 1=申请成为共产党员 2=新申请 3=申请通过 4=申请不通过
 };
 
 struct savedatamanager
